@@ -1,6 +1,9 @@
 from requests.models import Response
 
-from app.main import add, str_or_none, call_address_api, parse_response_json
+from app.main import (
+    Hoge, create_hoge_instance,
+    add, str_or_none, call_address_api, parse_response_json,
+)
 
 
 def test_add():
@@ -22,3 +25,13 @@ def test_call_address_api():
 def test_parse_response_json():
     address_api_response = call_address_api('1600022')
     assert isinstance(parse_response_json(address_api_response), dict)
+
+
+class TestHoge:
+    def test_sub(self):
+        hoge = Hoge()
+        assert hoge.sub(10, 9) == 1
+
+
+def test_create_hoge_instance():
+    assert isinstance(create_hoge_instance(), Hoge)

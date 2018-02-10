@@ -18,3 +18,15 @@ def call_address_api(zipcode: str) -> Response:
 
 def parse_response_json(response: Response) -> Dict[str, Any]:
     return response.json()
+
+
+class Hoge:
+    def __init__(self) -> None:
+        pass
+
+    def sub(self, d: int, e: int) -> int:
+        return d - e
+
+
+def create_hoge_instance() -> Hoge:
+    return Hoge()
