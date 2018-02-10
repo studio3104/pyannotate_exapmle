@@ -1,0 +1,93 @@
+[
+    {
+        "path": "app/main.py",
+        "line": 4,
+        "func_name": "add",
+        "type_comments": [
+            "(int, int) -> int"
+        ],
+        "samples": 1
+    },
+    {
+        "path": "app/main.py",
+        "line": 8,
+        "func_name": "str_or_none",
+        "type_comments": [
+            "(str) -> str",
+            "(int) -> None"
+        ],
+        "samples": 2
+    },
+    {
+        "path": "app/main.py",
+        "line": 12,
+        "func_name": "call_address_api",
+        "type_comments": [
+            "(str) -> requests.models.Response"
+        ],
+        "samples": 2
+    },
+    {
+        "path": "app/main.py",
+        "line": 16,
+        "func_name": "parse_response_json",
+        "type_comments": [
+            "(requests.models.Response) -> Dict[str, Union[Dict[str, str], int]]"
+        ],
+        "samples": 1
+    },
+    {
+        "path": "tests/conftest.py",
+        "line": 14,
+        "func_name": "collect_types_fixture",
+        "type_comments": [
+            "() -> Iterator"
+        ],
+        "samples": 4
+    },
+    {
+        "path": "tests/test_app.py",
+        "line": 6,
+        "func_name": "test_add",
+        "type_comments": [
+            "() -> None"
+        ],
+        "samples": 1
+    },
+    {
+        "path": "tests/test_app.py",
+        "line": 10,
+        "func_name": "test_str_or_none_str",
+        "type_comments": [
+            "() -> None"
+        ],
+        "samples": 1
+    },
+    {
+        "path": "tests/test_app.py",
+        "line": 14,
+        "func_name": "test_str_or_none_none",
+        "type_comments": [
+            "() -> None"
+        ],
+        "samples": 1
+    },
+    {
+        "path": "tests/test_app.py",
+        "line": 18,
+        "func_name": "test_call_address_api",
+        "type_comments": [
+            "() -> None"
+        ],
+        "samples": 1
+    },
+    {
+        "path": "tests/test_app.py",
+        "line": 22,
+        "func_name": "test_parse_response_json",
+        "type_comments": [
+            "() -> None"
+        ],
+        "samples": 1
+    }
+]
